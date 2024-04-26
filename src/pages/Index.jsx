@@ -13,7 +13,7 @@ const Index = () => {
         <Text mt={4} fontSize="md" textAlign="center" color={color}>
           Revolutionize your web development with AI-driven solutions.
         </Text>
-        <Button rightIcon={<FaArrowRight />} colorScheme="blue" variant="solid" mt={4}>
+        <Button rightIcon={<FaArrowRight />} colorScheme="blue" variant="solid" mt={4} onClick={() => window.location.href = '#features'}>
           Get Started
         </Button>
       </Box>
