@@ -1,4 +1,4 @@
-import { Box, Flex, Heading, Text, Button, Image, useColorModeValue } from '@chakra-ui/react';
+import { Box, Flex, Heading, Text, Button, Image, useColorModeValue, Link } from '@chakra-ui/react';
 import { FaArrowRight } from 'react-icons/fa';
 
 const Index = () => {
@@ -13,9 +13,11 @@ const Index = () => {
         <Text mt={4} fontSize="md" textAlign="center" color={color}>
           Revolutionize your web development with AI-driven solutions.
         </Text>
-        <Button rightIcon={<FaArrowRight />} colorScheme="blue" variant="solid" mt={4} onClick={() => window.location.href = '#features'}>
-          Get Started
-        </Button>
+        <Link href="https://www.example.com/register" isExternal>
+          <Button rightIcon={<FaArrowRight />} colorScheme="blue" variant="solid" mt={4}>
+            Get Started
+          </Button>
+        </Link>
       </Box>
     </Flex>
   );
